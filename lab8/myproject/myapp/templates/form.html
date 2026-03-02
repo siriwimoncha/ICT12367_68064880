@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>แบบฟอร์ม</title>
+{% endblock %}
+
+{% block content %}
+<h1>📝 แบบฟอร์มบันทึกข้อมูลประชากร</h1>
+
+<form>
+    <label>ชื่อ-นามสกุล</label>
+    <input type="text" placeholder="กรอกชื่อ-นามสกุล">
+
+    <label>อายุ</label>
+    <input type="number" placeholder="กรอกอายุ">
+
+    <button type="submit" class="btn-submit">ลงทะเบียน</button>
+    <button type="reset" class="btn-reset">ล้างข้อมูล</button>
+</form>
+{% endblock %}
